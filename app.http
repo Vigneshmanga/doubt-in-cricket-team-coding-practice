@@ -1,0 +1,30 @@
+GET http://localhost:3002/players/
+
+###
+
+post  http://localhost:3002/players/
+Content-Type: application/json
+
+{
+    "player_name":"vignesh",
+    "jersey_number":33,
+    "role":"Batsman"
+}
+
+###
+
+GET http://localhost:3002/players/4/
+
+###
+PUT http://localhost:3002/players/3/
+
+Content-Type: application/json
+
+{
+    "player_name":"prabhas",
+    "jersey_number":20,
+    "role":"Batsman"
+}
+
+###
+DELETE http://localhost:3002/players/3/
